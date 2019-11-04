@@ -747,4 +747,71 @@
             },
         ],
     },
+    'nuist.edu.cn': {
+        _name: '南京信息工程大学',
+        bulletin: [
+            {
+                title: '信息公告栏',
+                docs: 'https://docs.rsshub.app/university.html#nan-jing-xin-xi-gong-cheng-da-xue',
+                source: '/:categoryId/list.htm',
+                target: (params) => `/universities/nuist/bulletin/${params.categoryId}`,
+            },
+        ],
+        scs: [
+            {
+                title: '计算机与软件学院',
+                docs: 'https://docs.rsshub.app/university.html#nan-jing-xin-xi-gong-cheng-da-xue',
+                source: '/:categoryId/list.htm',
+                target: (params) => `/universities/nuist/scs/${params.categoryId}`,
+            },
+        ],
+        sese: [
+            {
+                title: '环境科学与工程学院',
+                docs: 'https://docs.rsshub.app/university.html#nan-jing-xin-xi-gong-cheng-da-xue',
+                source: '/Showbksjy.aspx',
+                target: (params, url) => `/universities/nuist/sese/${new URL(url).searchParams.get('CI')}`,
+            },
+        ],
+        cas: [
+            {
+                title: '大气科学学院',
+                docs: 'https://docs.rsshub.app/university.html#nan-jing-xin-xi-gong-cheng-da-xue',
+                source: '/Show.aspx',
+                target: (params, url) => `/universities/nuist/cas/${new URL(url).searchParams.get('CI')}`,
+            },
+        ],
+        jwc: [
+            {
+                title: '本课教学信息网',
+                docs: 'https://docs.rsshub.app/university.html#nan-jing-xin-xi-gong-cheng-da-xue',
+                source: '/Show.aspx',
+                target: (params, url) => `/universities/nuist/jwc/${new URL(url).searchParams.get('CI')}`,
+            },
+        ],
+        yjs: [
+            {
+                title: '研究生院学科建设处',
+                docs: 'https://docs.rsshub.app/university.html#nan-jing-xin-xi-gong-cheng-da-xue',
+                source: '/Show.aspx',
+                target: (params, url) => `/universities/nuist/yjs/${new URL(url).searchParams.get('CI')}`,
+            },
+        ],
+        xgc: [
+            {
+                title: '学生工作处',
+                docs: 'https://docs.rsshub.app/university.html#nan-jing-xin-xi-gong-cheng-da-xue',
+                source: '/:categoryId/list.htm',
+                target: (params) => `/universities/nuist/xgc/${params.categoryId}`,
+            },
+        ],
+        lib: [
+            {
+                title: '学生工作处',
+                docs: 'https://docs.rsshub.app/university.html#nan-jing-xin-xi-gong-cheng-da-xue',
+                source: '/list.php',
+                target: (params, url) => `/universities/nuist/lib/${new URL(url).searchParams.get('fid')}`,
+            },
+        ],
+    },
 });

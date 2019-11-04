@@ -614,7 +614,31 @@ https://rsshub.app/**nuist**/`bulletin` 或 https://rsshub.app/**nuist**/`bullet
 
 :::
 
-### 南信大信息公告栏
+### 南信大信息公告栏（新接口）
+
+<Route author="gylidian" example="/nuist/mcp/792" path="/universities/nuist/mcp/:category?" :paramsDesc="['默认为 `792`']">
+
+| 文件公告 | 招标信息 | 会议通知 | 党政事务 | 组织人事 | 科研信息 |
+| -------- | -------- | -------- | -------- | -------- | -------- |
+| 792      | 779      | 780      | 781      | 782      | 783      |
+
+| 招生就业 | 教学考试 | 专题讲座 | 校园活动 | 学院动态 | 其他 |
+| -------- | -------- | -------- | -------- | -------- | ---- |
+| 784      | 785      | 786      | 788      | 789      | qt   |
+
+::: tip 提示
+
+使用本接口再也无需通过 VPN 获取学校公告栏通知
+
+由于旧接口用户众多，另辟公告栏新接口
+
+接口取自南信大微信企业号，暂时稳定，如有问题请联系 gylidian
+
+:::
+
+</Route>
+
+### 南信大信息公告栏（旧接口）
 
 <Route author="gylidian" example="/nuist/bulletin/791" path="/universities/nuist/bulletin/:category?" :paramsDesc="['默认为 `791`']">
 
